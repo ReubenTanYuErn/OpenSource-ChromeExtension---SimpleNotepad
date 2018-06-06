@@ -1,0 +1,7 @@
+*.json~
+*.html~
+*.js~
+*.md~
+*.gitignore~
+*.txt~
+*.swp
