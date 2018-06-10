@@ -6,4 +6,24 @@ document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("textdata").addEventListener("mouseout", function(){
         localStorage["inputText"] = document.getElementById("textdata").value;
     });
+	
+	//Javascript to Clear current text in the text area for users to type new notes
+	document.getElementById("clear").addEventListener("click", function eraseText() {
+		document.getElementById("textdata").value = "";
+	});
+	
+	//Javascript to Copy All Text in the Text Area
+	document.getElementById("copy").addEventListener("click", function copyText() {
+	  var copyText = document.getElementById("textdata");
+	  copyText.select();
+	  document.execCommand("copy");
+	  alert("Copied the text: " + copyText.value);
+	});
+
+	
 });
+
+	
+	
+	
+

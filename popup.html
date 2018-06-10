@@ -4,8 +4,12 @@
         <script src="popup.js"></script>
     </head>
     <body>
-        <form id="data" style="width: 100%; height: 100%;">
-            <textarea id="textdata" rows="10" cols="50"></textarea>
-        </form>
+		<h1>Modified Simple Notepad</h1>
+       
+            <textarea id="textdata" rows="10" cols="50" placeholder="Write your note here"></textarea>
+			
+			<button onClick="eraseText();" id = "clear">Clear All</button>
+			<button onClick="copyText();" id = "copy">Copy to Clipboard</button>
+        
     </body>
 </html>
