@@ -4,6 +4,7 @@
     "name": "Simple Notepad",
     "description": "Simple notepad extension that saves what you jot down",
     "version": "1.0",
+	"default_locale": "en",
 
     "icons":{
         "19": "imgs/icon19.png",

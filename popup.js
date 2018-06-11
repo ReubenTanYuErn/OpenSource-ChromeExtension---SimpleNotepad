@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-    if(typeof localStorage["inputText"] !== "undefined")
+	if(typeof localStorage["inputText"] !== "undefined")
         document.getElementById("textdata").innerHTML = localStorage["inputText"];
 
     document.getElementById("textdata").addEventListener("mouseout", function(){
@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	  var copyText = document.getElementById("textdata");
 	  copyText.select();
 	  document.execCommand("copy");
+	  //Show message to user about the all text copied
 	  alert("Copied the text: " + copyText.value);
 	});
 
